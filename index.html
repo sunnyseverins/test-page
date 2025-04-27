@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Page</title>
+    <style>
+        #joke {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center; transform: translate(0%, 40%);">
+        <img id= "rat" src="HGJKFjgnbkjdfb.gif" width="50%" max-width="300" alt="111">
+        <img id= "joke" src="kl0y1e6hxor41.jpg" width="50%" max-width="800" alt="112" onload="myFunc()">
+    </div>
+    <script>
+        function myFunc(){
+            document.getElementById("joke").style.display = "inline-block";
+            document.getElementById("rat").style.display = "none";
+        }
+    </script>
+</body>
+</html>
