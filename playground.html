@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Page</title>
+    <style>
+        #joke-img {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Original Header</h1>
+    <p style="text-align: center;">We have a funny picture:</p>
+    <div style="text-align: center; transform: translate(0%, 10%);">
+        <img id="load-anim" src="HGJKFjgnbkjdfb.gif" width="10%" max-width="10" alt="111">
+        <p id="load-hint" style="color: darkblue;"> <i>Loading animation<br></i> </p>
+        <img id="joke-img" src="kl0y1e6hxor41.jpg" title="I am funny" width="50%" max-width="800" alt="112" onload="myFunc()">
+    </div>
+    <script>
+        function myFunc() {
+            document.getElementById("load-anim").style.display = "none";
+            document.getElementById("load-hint").style.display = "none";
+            document.getElementById("joke-img").style.display = "inline-block";
+        }
+    </script>
+</body>
+</html>
