@@ -1,0 +1,36 @@
+body {
+  background-color: cornsilk;
+  text-align: center;
+}
+h1 {}
+h2 {
+  text-shadow: -2px -2px 0 white;
+  margin-top: 40px;
+}
+h3 {
+  color: green;
+  text-shadow: -1px -1px 0 black;
+  font-style: italic;
+}
+.bubble {
+  display: inline;
+  margin-right: 20px;
+  border: 6px solid lightyellow;
+  border-radius: 15px;
+  background-color: white;
+  color: green;
+  line-height: 2.3;
+  white-space: nowrap;
+}
+address {
+  margin-bottom: 30px;
+  line-height: 2;
+}
+a:link, a:visited {
+  background-color: green;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}

@@ -1,0 +1,19 @@
+body {
+  background-color: cornsilk;
+}
+p {
+  font-family: monospace;
+}
+img {
+  height: auto;
+  width: 120px;
+  max-width: 400px;
+}
+.grid {
+  display: flex;
+  align-items: center;
+}
+.grid > div {
+  text-align: left;
+  margin-right: 30px;
+}
