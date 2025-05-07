@@ -17,3 +17,22 @@ img {
   text-align: left;
   margin-right: 30px;
 }
+.menu {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  color: cornsilk;
+  background-color: #666666;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #444444;
+}
