@@ -1,24 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: cornsilk;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(46, 46, 46);
+  font-family: Verdana, sans-serif;
+  color: white;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: rgb(64, 64, 64);
+  padding: 1px 15px;
+}
+.header-image {
+  width: 20%; padding: 10px;
+}
+.page-name {
+  font: bold 25px 'Times New Roman', serif;
+  padding: 0px 25px;  
+}
+
+.content-container {
+  display: flex;
+}
+aside {
+  width: 20%;
+  padding: 50px 5px;
+  color: rgb(30, 30, 30);
+}
+main {
+  width: 60%;
+}
+footer {
+  background-color: rgb(64, 64, 64);
   text-align: center;
 }
-h1 {}
+
+h1 {
+  font-family: 'Times New Roman', serif;
+}
 h2 {
-  text-shadow: -2px -2px 0 white;
-  margin-top: 40px;
+  margin-top: 50px; /* block separation without blocks. temporary solution */ 
+  font-size: 3;
+  text-align: center;
+  font-family: 'Times New Roman', serif;
 }
 h3 {
-  color: green;
-  text-shadow: -1px -1px 0 black;
-  font-style: italic;
+  margin-top: 50px;
+  font: small-caps 1.5 'Times New Roman', serif;
+  color: rgb(0, 174, 0);
 }
+
 .bubble {
   display: inline;
   margin-right: 20px;
-  border: 6px solid lightyellow;
+  padding: 5px;
+  border: 1px solid rgb(0, 236, 0);
   border-radius: 15px;
   background-color: white;
-  color: green;
+  color: black;
   line-height: 2.3;
   white-space: nowrap;
 }
@@ -26,11 +70,24 @@ address {
   margin-bottom: 30px;
   line-height: 2;
 }
+
 a:link, a:visited {
-  background-color: green;
-  color: white;
+  background-color: rgb(0, 236, 0);
+  color: black;
   padding: 15px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+}
+
+@media (max-width: 600px) {
+  aside {
+    width: 0%;
+    display: none;
+  }
+  main {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
