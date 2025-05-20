@@ -91,10 +91,16 @@ p {
 }
 
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
   margin-top: 30px;
   padding: 10px;
   text-align: center;
   background-color: rgb(64, 64, 64);
+}
+.footer-logo_link {
+  padding: 10px;
 }
 a.pg:link, a.pg:visited {
   color: white;
