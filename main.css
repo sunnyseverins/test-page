@@ -1,13 +1,41 @@
-* {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style: none;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   background-color: rgb(46, 46, 46);
   font-family: Verdana, sans-serif;
   color: white;
+}
+
+h1 {
+  font-family: 'Times New Roman', serif;
+  text-align: center;
+  padding: 15px;
+}
+h2 {
+  margin-top: 40px; /* block separation without blocks. temporary solution */
+  margin-bottom: 20px;
+  font-size: 3;
+  text-align: center;
+  font-family: 'Times New Roman', serif;
+}
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font: small-caps 1.5em 'Times New Roman', serif;
+  color: rgb(0, 174, 0);
+  text-align: center;
+}
+p {
+  font: 1em/1.5 Verdana, sans-serif;
 }
 
 .header {
@@ -19,73 +47,67 @@ body {
 .header-image {
   width: 20%; padding: 10px;
 }
-.page-name {
+.header-name {
   font: bold 25px 'Times New Roman', serif;
   padding: 0px 25px;  
 }
 
-.content-container {
+.main {
   display: flex;
 }
-aside {
-  width: 20%;
-  padding: 50px 5px;
-  color: rgb(30, 30, 30);
+.main aside {
+  flex: 0 0 20%;
 }
-main {
-  width: 60%;
+.main-body {
+  flex: 0 0 60%;
 }
-footer {
-  background-color: rgb(64, 64, 64);
-  text-align: center;
+.main-contact_info {
+  font-style: italic;
+  color: green;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 15px;
 }
-
-h1 {
-  font-family: 'Times New Roman', serif;
+.main-contact_info div {
+  margin: 5px 10px;
 }
-h2 {
-  margin-top: 50px; /* block separation without blocks. temporary solution */ 
-  font-size: 3;
-  text-align: center;
-  font-family: 'Times New Roman', serif;
+.main-bubbles_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-h3 {
-  margin-top: 50px;
-  font: small-caps 1.5 'Times New Roman', serif;
-  color: rgb(0, 174, 0);
-}
-
 .bubble {
   display: inline;
-  margin-right: 20px;
-  padding: 5px;
-  border: 1px solid rgb(0, 236, 0);
-  border-radius: 15px;
+  margin: 5px;
+  padding: 2px 10px;
+  border: 2px solid rgb(0, 174, 0);
+  border-radius: 30px;
   background-color: white;
   color: black;
+  font-weight: bold;
   line-height: 2.3;
   white-space: nowrap;
 }
-address {
-  margin-bottom: 30px;
-  line-height: 2;
-}
 
-a:link, a:visited {
-  background-color: rgb(0, 236, 0);
-  color: black;
-  padding: 15px 25px;
+.footer {
+  margin-top: 30px;
+  padding: 10px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
+  background-color: rgb(64, 64, 64);
+}
+a.pg:link, a.pg:visited {
+  color: white;
+  text-decoration: none; 
+  display: inline;
 }
 
 @media (max-width: 600px) {
-  aside {
-    width: 0%;
+  .main aside {
+    flex: 0 0 0%;
     display: none;
   }
-  main {
+  .main-body {
     width: 100%;
     padding-left: 10px;
     padding-right: 10px;
