@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebRef.ru Task 1</title> <!---->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 18px;
+        }
+        .main {
+            margin: auto;
+            margin-top: 10px;
+            width: 400px;
+            padding: 30px;
+            box-shadow: 0 0 5px black;
+        }
+        p.greeting {
+            text-align: center;
+            font: small-caps bold 30px/1.5 "Times New Roman", sans-serif;
+        }
+        .form {
+            padding: 20px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            margin: 5px 0px;
+            padding: 2px;
+            border: 1px solid rgb(196, 196, 196);
+            border-radius: 3px;
+        }
+        .remember {
+            text-align: right;
+        }
+        label {
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .button {
+            width: 100%;
+            border: none;
+            padding: 10px;
+            background-color: rosybrown;
+            color: white;
+        }
+        @media (max-width: 400px) {
+            .main {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p style="position: absolute;"><a href="https://webref.ru/course/position/static">task link</a></p>
+    <div class="main">
+        <p class="greeting">Welcome!</p>
+        <div class="form">
+            <form>
+                <input type="text" placeholder="Login" name="login" id="login">
+                <input type="password" placeholder="Password" name="pswd" id="pswd">
+                <div class="remember">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+                <br>
+                <button class="button">Log In</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
