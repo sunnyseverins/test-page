@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100%;
+            background-color: rgb(96, 69, 50);
+            color: white;
+            padding: 5px 20px 20px 20px;
+        }
+        .container h2 {
+            text-align: center;
+            color: gold;
+            padding: 10px;
+            margin: 0px 25px;
+        }
+        .container h2::before, /*this task is bullshit*/
+        .container h2::after {
+            content: "";
+            height: 1px;
+            background-color: gold;
+            width: 50%;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+        }
+        .container h2::before {
+            right: 5px;
+            margin-left: -50%;
+        }
+        .container h2::after {
+            left: 5px;
+            margin-right: -50%;
+        }
+        
+    </style>
+</head>
+<body>
+    <p style="position: fixed; bottom: 0; right: 50%;"><a href="https://webref.ru/course/position/relative">TASK</a></p>
+    <div class="container">
+        <h2>Hippo</h2>
+        <p>
+            Hippos can open their mouths almost to 180 degrees! It makes 
+            their "smile" one of the kind in the animal world.
+        </p>
+    </div>
+</body>
+</html>
